@@ -116,6 +116,25 @@
                 {% endif %}
             </div>
     </div>
+    <button onclick="shareCurrentPage()">Share this page</button>
+    <script>
+        async function shareCurrentPage() {
+            try {
+                // Check if the Web Share API is supported by the browser
+                if (navigator.share) {
+                    await navigator.share({
+                        title: document.title,
+                        url: window.location.href
+                    });
+                } else {
+                    // Web Share API is not supported
+                    alert('Web Share API is not supported in this browser.');
+                }
+            } catch (error) {
+                console.error('Error sharing:', error);
+            }
+        }
+    </script>
     {% if site.tracking_id %}
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
