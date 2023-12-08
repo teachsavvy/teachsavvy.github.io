@@ -5,7 +5,7 @@ baseurl: ""
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
 
-tracking_id: G-FQMWH45MTP
+# tracking_id: G-FQMWH45MTP
 
 footer: yes
 footer_url: "https://github.com/ankitsultana"
