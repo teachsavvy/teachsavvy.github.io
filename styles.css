@@ -1,0 +1,23 @@
+body {
+  position: relative;
+}
+
+.content-section {
+  padding-top: 60px;
+}
+
+.hero-section {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #fff;
+  margin: 0 10px;
+}
